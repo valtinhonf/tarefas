@@ -1,0 +1,28 @@
+version: "3.0"
+
+services:
+  tarefas:
+    container_name: tarefas
+    restart: always
+    #volumes:
+    #    - .:/usr/app
+    ports:
+      - "8088:8080"
+      #- "80:8080"
+    tty: true
+    networks:
+      - maisshopp
+    deploy:
+      resources:
+        limits:
+          memory: 1024M
+    build:
+      context: .
+      dockerfile: Dockerfile
+      # entrypoint: ["/bin/sh", "start.sh"]
+      # entrypoint: ["/bin/sh", "java -Dfile.encoding=UTF-8 -jar /usr/app/apidfe.jar"]
+      # entrypoint: ["/bin/sh", "java -Dfile.encoding=UTF-8 -jar apidfe-0.0.1-SNAPSHOT.jar"]
+
+networks:
+  maisshopp:
+    external: true
