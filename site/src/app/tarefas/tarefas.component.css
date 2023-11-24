@@ -1,0 +1,63 @@
+.iconDelete{
+  background-image: url("../../assets/images/delete_black_24dp.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.iconEdit{
+  background-image: url("../../assets/images/edit_black_24dp.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.iconSave{
+  background-image: url("../../assets/images/check_circle_black_24dp.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.iconCancel{
+  background-image: url("../../assets/images/cancel_black_24dp.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.iconUp{
+  background-image: url("../../assets/images/keyboard_arrow_up_black_24dp.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.iconDown{
+  background-image: url("../../assets/images/keyboard_arrow_down_black_24dp.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+i:hover{
+  background-size: 120%;
+}
+
+.linhaComErro{
+  border-color: red;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.linhaComDestaque{
+  background-color: rgb(207, 207, 0);
+
+}

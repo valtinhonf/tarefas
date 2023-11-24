@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "d211ba99-7a0c-484a-ab19-6aa22da5e95e",
+		"name": "Teste tarefas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8570466"
+	},
+	"item": [
+		{
+			"name": "Salvando nova tarefa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Conclui esta merda5\",\r\n    \"custo\":-5,\r\n    \"datalimite\":\"2023-12-12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listando todas as tarefas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca tarefa por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/:idtarefa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						":idtarefa"
+					],
+					"variable": [
+						{
+							"key": "idtarefa",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluindo tarefa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/:idtarefa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						":idtarefa"
+					],
+					"variable": [
+						{
+							"key": "idtarefa",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
