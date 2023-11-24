@@ -17,4 +17,4 @@ RUN apk add tzdata
 
 ENV TZ=America/Sao_Paulo
 RUN cp /usr/share/zoneinfo/$TZ /etc/localtime
-CMD [ "java", "-Dfile.encoding=UTF-8", "-jar", "apicerne-0.0.1-SNAPSHOT.jar" ]
+CMD [ "java", "-Dfile.encoding=UTF-8", "-jar", "tarefas-0.0.1-SNAPSHOT.jar" ]
